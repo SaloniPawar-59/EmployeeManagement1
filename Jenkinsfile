@@ -5,7 +5,7 @@ pipeline {
         AWS_REGION = 'us-east-1'
         EB_APP_NAME = 'EmployeeManagementApp'
         EB_ENV_NAME = 'EmployeeManagementApp-env'
-        S3_BUCKET = 'my-eb-deployments-bucket'
+        S3_BUCKET = 'my-eb-deployments-bucket1'
     }
 
     stages {
