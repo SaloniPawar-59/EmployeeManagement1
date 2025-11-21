@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         EB_APP_NAME = 'EmployeeManagementApp'
-        EB_ENV_NAME = 'EmployeeManagementApp-env'
+        EB_ENV_NAME = 'EmployeeManagementApp-env-1'
         S3_BUCKET = 'my-eb-deployments-bucket1'
     }
 
