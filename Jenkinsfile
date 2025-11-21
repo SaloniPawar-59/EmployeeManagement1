@@ -55,10 +55,10 @@ pipeline {
 
     post {
         success {
-            sh 'aws sns publish --topic-arn arn:aws:sns:us-east-1:123456789012:MySNSTopic --message "Deployment Successful!"'
+            sh 'aws sns publish --topic-arn arn:aws:sns:ap-south-1:304686171763:mytopic --message "Deployment Successful!"'
         }
         failure {
-            sh 'aws sns publish --topic-arn arn:aws:sns:us-east-1:123456789012:MySNSTopic --message "Deployment Failed!"'
+            sh 'aws sns publish --topic-arn arn:aws:sns:ap-south-1:304686171763:mytopic --message "Deployment Failed!"'
         }
     }
 }
