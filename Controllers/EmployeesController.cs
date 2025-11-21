@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EmployeeManagementApp.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]  // ensures /api/employees
 public class EmployeesController : ControllerBase
 {
     private readonly AppDbContext _db;
