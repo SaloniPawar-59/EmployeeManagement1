@@ -2,7 +2,7 @@ pipeline {
     agent { label 'webapi-agent' }
 
     environment {
-        AWS_REGION = 'us-east-1'
+        AWS_REGION = 'ap-south-1'
         EB_APP_NAME = 'EmployeeManagementApp'
         EB_ENV_NAME = 'EmployeeManagementApp-env'
         S3_BUCKET = 'my-eb-deployments-bucket1'
