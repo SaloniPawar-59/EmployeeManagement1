@@ -22,12 +22,15 @@ pipeline {
             }
         }
 
-        stage('Publish') {
-            steps {
-                sh 'dotnet publish -c Release -o published'
-                sh 'zip -r app.zip published/*'
-            }
+       stage('Publish') {
+         steps {
+              sh '''
+              dotnet publish -c Release -o published
+              cd published
+              zip -r ../app.zip .
+             '''
         }
+    }
 
         stage('Upload to S3') {
             steps {
